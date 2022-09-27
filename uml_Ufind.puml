@@ -14,4 +14,10 @@ class Tienda {
 class Menu {
    precio: int
 }
+
+
+Usuario "*" --*  "1" Tienda
+Tienda "*" --*  "1" Menu
+Menu "1" --* "1" Comida
+
 @enduml
