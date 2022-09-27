@@ -1,0 +1,17 @@
+@startuml
+class Usuario {
+  nombre : String
+}
+
+class Comida {
+   nombre : String
+}
+
+class Tienda {
+   nombre : String
+}
+
+class Menu {
+   precio: int
+}
+@enduml
