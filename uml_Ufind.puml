@@ -1,20 +1,51 @@
 @startuml
+left to right direction
 class Usuario {
-  nombre : String
+  Nombre : String
+  Monedero : int
+  Buscar_precios_de_comida()
 }
 
 class Comida {
    nombre : String
+   ingredientes : String
+
 }
 
+Class Ubicación {
+
+}
+
+class Fuera_de_universidad{
+
+
+}
+
+Class Universidad{
+
+}
+
+Class Dunord{
+
+}
 class Tienda {
    nombre : String
+   lista : String
+   Disponiblidad()
+   mostrar_productos()
 }
 
 class Menu {
+   
    precio: int
+   cantida: int
+   seleccionar_precio()
+   seleccionar_cantidad()
 }
 
+Class Producto_final{
+   Total : int
+}
 
 Usuario "*" --*  "1" Tienda
 Tienda "*" --*  "1" Menu
