@@ -1,5 +1,6 @@
 @startuml
 left to right direction
+
 class Usuario {
   +Nombre : String
   +Monedero : int
@@ -21,7 +22,7 @@ Class Universidad{
 }
 
 
-class Dunord {
+class du_Nord {
    +nombre : String
    +lista : String
    +Disponiblidad()
@@ -53,8 +54,16 @@ Class Producto_final{
    +Total : int
 }
 
-Usuario "*" --*  "1" Tienda
-Tienda "*" --*  "1" Menu
-Menu "1" --* "1" Comida
+Usuario --* Ubicación
+Ubicación <|-- Universidad
+Ubicación <|-- Fuera_de_universidad
+Universidad --* du_Nord
+du_Nord <|-- DunordExpress
+du_Nord <|-- DunordTerraza
+Menu <|-- DunordExpress
+Menu <|-- DunordTerraza
+Menu --* Comida
+Comida --* Producto_final
+
 
 @enduml
