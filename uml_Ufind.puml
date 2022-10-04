@@ -8,17 +8,17 @@ class Usuario {
 }
 
 Class Ubicación {
-    +Numero_de_tiendas: str
+    +Numero_de_tiendas: String
     +Informar_disponibilidad()
 }
 
 class Fuera_de_universidad{
-
+     +Horario : int
 
 }
 
 Class Universidad{
-
+     +Elegir_lugar()
 }
 
 
@@ -30,10 +30,11 @@ class du_Nord {
 }
 
 Class DunordExpress{
-
+     +Horario : int
 }
 
 Class DunordTerraza{
+     +Horario : int
 
 }
 class Menu {
@@ -52,6 +53,7 @@ class Comida {
 
 Class Producto_final{
    +Total : int
+   +Mostrar total()
 }
 
 Usuario --* Ubicación
