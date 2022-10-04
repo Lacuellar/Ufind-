@@ -5,7 +5,7 @@ Este proyecto se trata de una aplicación, ya sea web o móvil que permita a las
 
 Segundo diseño UML
 
-![image](https://user-images.githubusercontent.com/98895078/193622472-f7d9ae98-3d06-400a-827c-15735d5f0b7b.png)
+![image](https://user-images.githubusercontent.com/98895078/193726770-5718b28a-1077-4aa1-bfdc-0e509d367dff.png)
 
 En el proyecto usaremos 4 clases: Usuario, Menu, Tienda, Comida. La clase usuario enviará información a la clase Tienda. Una vez en Tienda se realizara la conexión con la Clase Menu para conocer el pedido que hara el usuario y este pedido se representa con la conexión a la Clase Comida, que es la clase final y el objetivo del usuario.
 
