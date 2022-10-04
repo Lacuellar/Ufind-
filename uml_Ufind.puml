@@ -1,19 +1,14 @@
 @startuml
 left to right direction
 class Usuario {
-  Nombre : String
-  Monedero : int
-  Buscar_precios_de_comida()
-}
-
-class Comida {
-   nombre : String
-   ingredientes : String
-
+  +Nombre : String
+  +Monedero : int
+  +Buscar_precios_de_comida()
 }
 
 Class Ubicación {
-
+    +Numero_de_tiendas: str
+    +Informar_disponibilidad()
 }
 
 class Fuera_de_universidad{
@@ -25,26 +20,37 @@ Class Universidad{
 
 }
 
-Class Dunord{
 
-}
-class Tienda {
-   nombre : String
-   lista : String
-   Disponiblidad()
-   mostrar_productos()
+class Dunord {
+   +nombre : String
+   +lista : String
+   +Disponiblidad()
+   +mostrar_productos()
 }
 
+Class DunordExpress{
+
+}
+
+Class DunordTerraza{
+
+}
 class Menu {
    
-   precio: int
-   cantida: int
-   seleccionar_precio()
-   seleccionar_cantidad()
+   +precio: int
+   +cantida: int
+   +seleccionar_precio()
+   +seleccionar_cantidad()
+}
+
+class Comida {
+   +nombre : String
+   +ingredientes : String
+
 }
 
 Class Producto_final{
-   Total : int
+   +Total : int
 }
 
 Usuario "*" --*  "1" Tienda
